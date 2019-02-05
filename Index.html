@@ -6,49 +6,92 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/stile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="js/JavaScriptCustom.js"></script>
+    <link rel="stylesheet" href="css/stile.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-<div class="container">
 
-    <div class="TopPage">
-        <from>
-            <label>Inserisci Nome e Cognome:</label>
-            <input  id="nome" class="form-control" type="text" placeholder="Nome e Cognome" required>
-            <label>Inserisci fascia di reddito:</label>
-            <select id="reddito" class=" SelectReddito form-control">
-                <option class="OptionReddito">meno di 10.000</option>
-                <option class="OptionReddito">tra 10.000 e 30.000</option>
-                <option class="OptionReddito">pi&ugrave; di 30.000</option>
-            </select>
-            <select id="sesso" class="SelectSesso form-control">
-                <option class="OptionSesso">Maschio</option>
-                <option class="OptionSesso">Femmina</option>
-            </select>
-            <button type="button" class="btn btn-primary" onclick="aggiungi()">Aggiungi</button>
-        </form>
+    <div class="container">
+        <div class="row">
+            <div class="col mx-auto">
+                <from>
+                    <label>Inserisci Nome e Cognome:</label>
+                    <input id="nome" class="form-control" type="text" placeholder="Nome e Cognome">
+                    <label>Inserisci fascia di reddito:</label>
+                    <select id="reddito" class=" SelectReddito form-control">
+                        <option class="OptionReddito">meno di 10.000</option>
+                        <option class="OptionReddito">tra 10.000 e 30.000</option>
+                        <option class="OptionReddito">pi&ugrave; di 30.000</option>
+                    </select>
+                    <select id="sesso" class="SelectSesso form-control">
+                        <option class="OptionSesso">Maschio</option>
+                        <option class="OptionSesso">Femmina</option>
+                    </select>
+                    <button type="button" class="btn btn-primary" onclick="aggiungi()">Aggiungi</button>
+                    </form>
+            </div>
+        </div>
+        <div class="row" id="tab">
+            <div class="col">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-maschio-tab" data-toggle="tab" href="#nav-maschio" role="tab"
+                            aria-controls="nav-maschio" aria-selected="true">Maschio</a>
+                        <a class="nav-item nav-link" id="nav-femmina-tab" data-toggle="tab" href="#nav-femmina" role="tab"
+                            aria-controls="nav-femmina" aria-selected="true">Femmina</a></div>
+                </nav>
+
+                <div class="tab-content">
+                    <div id="nav-maschio" class="tab-pane fade in show active">
+                        <div class="container" id="Maschio">
+                            <div class="row justify-content-md-center">
+                                <div class="col-6" id="maschioNome">
+                                    NOME e COGNOME
+                                </div>
+                                <div class="col-6" id="maschioReddito">
+                                    REDDITO
+                                </div>
+                            </div>
+                            <div class="row justify-content-end">
+                                <div id="totaleMaschi" class="col-4">
+                                    TOTALE : 0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nav-femmina" class="tab-pane fade">
+                        <div class="container" id="Maschio">
+                            <div class="row justify-content-md-center">
+                                <div class="col" id="femminaNome">
+                                    NOME e COGNOME
+                                </div>
+                                <div class="col" id="femminaReddito">
+                                    REDDITO
+                                </div>
+                            </div>
+                            <div class="row justify-content-end">
+                                <div id="totaleFemmine" class="col-4">
+                                    TOTALE : 0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#Maschio">Maschio</a></li>
-        <li><a data-toggle="tab" href="#Femmina">Femmina</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="Maschio" class="tab-pane fade in active">
-        </div>
-        <div id="Femmina" class="tab-pane fade">
-        </div>
-
-    </div>
-</div>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
