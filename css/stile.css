@@ -7,10 +7,8 @@
     border: 1px solid black;
 }
 
-.container{
+.InsideTabs{
     width: 60%;
-    margin-top: 20px;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
