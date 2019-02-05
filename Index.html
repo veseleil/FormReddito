@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ccs/Style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="Script.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="TopPage">
+        <from>
+            <label>Inserisci Nome e Cognome:</label>
+            <input class="form-control" type="text" placeholder="Nome e Cognome">
+            <label>Inserisci fascia di reddito:</label>
+            <select class=" SelectReddito form-control">
+                <option class="OptionReddito">meno di 10.000</option>
+                <option class="OptionReddito">tra 10.000 e 30.000</option>
+                <option class="OptionReddito">pi&ugrave; di 30.000</option>
+            </select>
+            <select class="SelectSesso form-control">
+                <option class="OptionSesso">Maschio</option>
+                <option class="OptionSesso">Femmina</option>
+            </select>
+        </form>
+    </div>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#Maschio">Maschio</a></li>
+        <li><a data-toggle="tab" href="#Femmina">Femmina</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="Maschio" class="tab-pane fade in active">
+            <h3>Maschio</h3>
+            <p></p>
+        </div>
+        <div id="Femmina" class="tab-pane fade">
+            <h3>Femmina</h3>
+            <p></p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>
