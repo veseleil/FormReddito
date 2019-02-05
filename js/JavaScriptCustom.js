@@ -4,4 +4,7 @@ function gettainput(){
     var reddito= $('#reddito').val();
     var sesso= $('#sesso').val();
  
+
+    $('#maschi').value()
+    
  }
