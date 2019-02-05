@@ -1,0 +1,50 @@
+#Maschio, #Femmina {
+    width: 60%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border: 1px solid black;
+}
+
+.container{
+    width: 60%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#nome {
+    width: 40%;
+}
+
+#reddito {
+    width: 40%;
+}
+
+#sesso {
+    width: 40%;
+    margin-top: 10px;
+}
+
+#tab {
+    width: 90%;
+}
+
+
+#tab {
+    margin-top: 40px;
+}
+
+button, label {
+    margin-top: 10px;
+}
+
+#totaleFemmine, #totaleMaschi {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+#maschioNome, #maschioReddito, #femminaNome, #femminaReddito {
+    font-size: 20px;
+}
