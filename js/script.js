@@ -19,10 +19,12 @@ function aggiungi() {
         $("#maschioNome").append("<div>" + nome + "<div>");
         $("#maschioReddito").append("<div>" + reddito + "<div>");
         $("#totaleMaschi").text("TOTALE : " + maschi_tot);
+        $("#totaleMaschi").show();
     } else {
         femmine_tot++;
         $("#femminaNome").append("<div>" + nome + "<div>");
         $("#femminaReddito").append("<div>" + reddito + "<div>");
         $("#totaleFemmine").text("TOTALE : " + femmine_tot);
+        $("#totaleFemmine").show();
     }
 }
